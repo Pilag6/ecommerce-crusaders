@@ -1,0 +1,1 @@
+https://korando-demo.myshopify.com/cdn/shop/files/logo_300x300.png?v=1613746294
