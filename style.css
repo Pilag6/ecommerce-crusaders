@@ -25,7 +25,7 @@ a {
     --second-grey: #6a6a6a;
     --white: #e5e5e5;
     --dark-white: #ebebeb;
-    --btns-white: #F2F2F2;
+    --btns-white: #f2f2f2;
 }
 
 ::selection {
@@ -36,9 +36,12 @@ a {
 
 body {
     font-family: "Poppins", sans-serif;
+    color: var(--grey);
 }
 
-/* HEADER TOP */
+/* ------------------ 
+      HEADER TOP 
+---------------------*/
 
 .header-top {
     display: flex;
@@ -122,62 +125,67 @@ body {
     border-bottom: 1px solid var(--dark-white);
 }
 
-/* HEADER BOTTOM */
+/* ------------------ 
+    HEADER BOTTOM
+---------------------*/
 
 .header-bottom {
     padding: 0 30px;
     height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.header-bottom,
+
 .forms,
 .categories {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
-.header-bottom {
-    flex-wrap: wrap;
-}
 
 .logo {
-  flex: 0 0 16%;
-  max-width: 16%;
+    flex: 0 0 16%;
+    max-width: 16%;
+}
+
+.header-forms {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
   display: flex;
+  justify-content: start;
+  gap: 30px;
 }
 
 .categories {
-    gap: 10px;
-    background: var(--btns-white);
-    padding: 1rem 4rem 1rem 1rem;
-    justify-content: start;
-    /* width: 30%; */
+    background: var(--btns-white);;
+    width: 30%;
+    padding-left: 15px;
     border-radius: 3px;
     font-size: 14px;
     font-weight: 600;
+    height: 50px;
+    cursor: pointer;
 }
 
-.forms {
-    flex-grow: 1;
-    display: flex;
-    justify-content: start;
-    gap: 30px;
-
+.categories p {
+  width: 100%;
+  padding: 0 15px;
 }
 
 .form-search {
     border: 1px solid #ebebeb;
     border-radius: 3px;
-    width: 60%;
+    width: 75%;
 }
 
 .form-search form {
-  display: flex;
-  padding-right: 100px;
-  position: relative;
-
+    display: flex;
+    padding-right: 100px;
+    position: relative;
 }
 
 input[type="search"] {
@@ -189,7 +197,6 @@ input[type="search"] {
     outline: none;
     padding: 0 15px;
     width: 100%;
-    
 }
 
 input[type="submit"] {
@@ -212,22 +219,40 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: var(--grey);
+    background-color: var(--grey);
 }
 
 input::placeholder {
-  font-family: 'Poppins';
-  font-weight: 500;
-  color: var(--second-grey);
-  width: 100%;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: var(--second-grey);
+    width: 100%;
 }
 
 .cart {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    flex: 0 0 10%;
-    max-width: 10%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--red);
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
 }
 .cart i {
     font-size: 1.8rem;
@@ -244,18 +269,15 @@ input::placeholder {
     padding: 0 10px;
 }
 
-
 @media screen and (min-width: 1600px) {
     .header-top,
     .header-bottom {
-      padding: 0 75px;
+        padding: 0 75px;
     }
-  
 }
 
 @media screen and (max-width: 1200px) {
     input[type="search"] {
-      width: 100%;
+        width: 100%;
     }
-  
 }
