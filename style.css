@@ -25,6 +25,7 @@ a {
     --second-grey: #6a6a6a;
     --white: #e5e5e5;
     --dark-white: #ebebeb;
+    --btns-white: #F2F2F2;
 }
 
 ::selection {
@@ -36,6 +37,8 @@ a {
 body {
     font-family: "Poppins", sans-serif;
 }
+
+/* HEADER TOP */
 
 .header-top {
     display: flex;
@@ -49,7 +52,7 @@ body {
 .header-top__left--nav,
 .header-top__right--nav {
     display: flex;
-    gap: 35px;
+    gap: 34px;
     font-size: 14px;
     color: var(--grey);
 }
@@ -123,7 +126,7 @@ body {
 
 .header-bottom {
     padding: 0 30px;
-    height: 120px;
+    height: 130px;
 }
 
 .header-bottom,
@@ -147,17 +150,19 @@ body {
 
 .categories {
     gap: 10px;
-    background: var(--dark-white);
-    padding: 0.8rem 1rem;
+    background: var(--btns-white);
+    padding: 1rem 4rem 1rem 1rem;
     justify-content: start;
-    width: 30%;
+    /* width: 30%; */
     border-radius: 3px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .forms {
     flex-grow: 1;
     display: flex;
+    justify-content: start;
     gap: 30px;
 
 }
@@ -165,18 +170,25 @@ body {
 .form-search {
     border: 1px solid #ebebeb;
     border-radius: 3px;
-    flex-grow: 1;
-    
+    width: 60%;
 }
 
-#search {
+.form-search form {
+  display: flex;
+  padding-right: 100px;
+  position: relative;
+
+}
+
+input[type="search"] {
     border: 0 none;
     color: #a4a4a4;
     height: 48px;
     line-height: 48px;
     margin: 0;
-    outline: medium none;
+    outline: none;
     padding: 0 15px;
+    width: 100%;
     
 }
 
@@ -191,7 +203,10 @@ input[type="submit"] {
     font-weight: 600;
     height: 50px;
     line-height: 50px;
-    float: right;
+    /* float: right; */
+    position: absolute;
+    right: -1px;
+    top: -1px;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -203,6 +218,8 @@ input[type="submit"]:hover {
 input::placeholder {
   font-family: 'Poppins';
   font-weight: 500;
+  color: var(--second-grey);
+  width: 100%;
 }
 
 .cart {
@@ -225,4 +242,20 @@ input::placeholder {
 .cart i.fa-heart {
     border-right: 1px solid var(--dark-white);
     padding: 0 10px;
+}
+
+
+@media screen and (min-width: 1600px) {
+    .header-top,
+    .header-bottom {
+      padding: 0 75px;
+    }
+  
+}
+
+@media screen and (max-width: 1200px) {
+    input[type="search"] {
+      width: 100%;
+    }
+  
 }
