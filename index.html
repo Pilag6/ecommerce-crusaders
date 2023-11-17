@@ -1,99 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecommerce Crusaders</title>
-  <!-- Favicon -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecommerce Crusaders</title>
+        <!-- Favicon -->
 
-  <link rel="shortcut icon" href="https://korando-demo.myshopify.com/cdn/shop/files/favicon_32x32.png?v=1613747239" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="https://korando-demo.myshopify.com/cdn/shop/files/favicon_32x32.png?v=1613747239"
+            type="image/x-icon"
+        />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+        <!-- Styles -->
+        <link rel="stylesheet" href="style.css" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <!-- HEADER TOP -->
+                <div class="header-top">
+                    <div class="header-top__left">
+                        <ul class="header-top__left--nav">
+                            <li><a href="#" class="active">Home
+                              <ul class="dropdown home-dropdown">
+                                <li><a href="#">Home One</a></li>
+                                <li><a href="#">Home Two</a></li>
+                                <li><a href="#">Home Three</a></li>
+                                <li><a href="#">Home Four</a></li>
+                                <li><a href="#">Home LTA</a></li>
+                              </ul>
+                            </a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </div>
 
-</head>
-<body>
-  <div class="container">
-    <header>
+                    <!-- HEADER BOTTOM -->
+                    <div class="header-top__right">
+                        <ul class="header-top__right--nav">
+                            <li>
+                                <a href="">My Account 
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="dropdown myAccount-dropdown">
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Cart</a></li>
+                                        <li><a href="#">Whishlist</a></li>
+                                        <li><a href="#">Sign In</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">USD 
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="dropdown currency-dropdown">
+                                        <li><a href="#">USD - US Dollar</a></li>
+                                        <li><a href="#">EUR - Euro</a></li>
+                                        <li><a href="#">GBP - British Pound</a></li>
+                                        <li><a href="#">INR - Indian Rupee</a></li>
+                                        <li><a href="#">JPY - Japan Yen</a></li>
+                                        <li><a href="#">CAD - Canada Dollar</a></li>
+                                        <li><a href="#">AUD - Australian Dollar</a></li>
+                                        <li><a href="#">ARG - Argentinian Pesos</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-      <!-- HEADER TOP -->
-      <div class="header-top">
-        <div class="header-top__left">
-            <ul class="header-top__left--nav">
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Products</a></li>
-            </ul>
+                <div class="header-bottom">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img
+                            src="https://korando-demo.myshopify.com/cdn/shop/files/logo_300x300.png?v=1613746294"
+                            alt=""
+                        />
+                    </div>
+
+                    <!-- CATEGORIES -->
+
+                    <section class="header-forms">
+                        <div class="categories">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>ALL CATEGORIES</p>
+                        </div>
+
+                        <!-- SEARCH -->
+                        <div class="form-search">
+                            <form action="">
+                                <input
+                                    type="search"
+                                    name="search"
+                                    id="search"
+                                    placeholder="Seach entire store here..."
+                                    autocomplete="off"
+                                />
+                                <input type="submit" value="Search" />
+                            </form>
+                        </div>
+                    </section>
+
+                    <!-- CART -->
+
+                    <div class="cart">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p class="cart-count">0</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
 
-        <!-- HEADER BOTTOM -->
-        <div class="header-top__right">
-          <ul class="header-top__right--nav">
-            <li>
-              <a href="" >My Account <i class="fa fa-angle-down"></i>
-
-                <ul class="dropdown">
-                  <li><a href="#">My Account</a></li>
-                  <li><a href="#">My Cart</a></li>
-                  <li><a href="#">Whishlist</a></li>
-                  <li><a href="#">Sign In</a></li>
-                </ul>
-              
-              </a>
-            </li>
-            <li><a href="" >USD <i class="fa fa-angle-down"></i></a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="header-bottom">
-        <!-- LOGO -->
-        <div class="logo">
-          <img src="https://korando-demo.myshopify.com/cdn/shop/files/logo_300x300.png?v=1613746294" alt="">
-        </div>
-        
-        <!-- CATEGORIES -->
-
-        <section class="header-forms">
-          <div class="categories">
-            <i class="fa-solid fa-bars"></i>
-            <p>ALL CATEGORIES</p>
-          </div>
-  
-          <!-- SEARCH -->
-          <div class="form-search" >
-            <form action="">
-              <input type="search" name="search" id="search" placeholder="Seach entire store here..." autocomplete="off">
-              <input type="submit" value="Search" >
-            </form>
-          </div>
-        </section>
-
-        <!-- CART -->
-
-        <div class="cart">
-          <i class="fa-regular fa-heart"></i>
-          <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i> <span class="cart-count">0</span></div>
-
-        </div>
-
-
-      </div>
-    </header>
-  </div>
-  </ul>
-</body>
+        <script type="module" src="./main.js"></script>
+    </body>
 </html>
