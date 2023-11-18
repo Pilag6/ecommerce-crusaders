@@ -337,13 +337,13 @@ input::placeholder {
         max-width: 65%;
         line-height: 1.2;
         position: relative;
-    
+
         & h2 {
             font-size: 3rem;
             font-weight: 700;
             text-transform: uppercase;
             margin-bottom: 20px;
-            
+
             & span {
                 color: var(--red);
                 display: block;
@@ -356,7 +356,7 @@ input::placeholder {
             animation-delay: 0.3s;
 
             & span {
-            color: var(--red);
+                color: var(--red);
             }
         }
 
@@ -408,10 +408,59 @@ input::placeholder {
     border-radius: 50%;
 }
 
+/* ------------------ 
+    MAIN SECTION
+---------------------*/
 
+main {
+    padding: 30px;
+    max-width: 1240px;
+    margin: auto;
+}
 
+/* ------------------ 
+    TEMPLATES SECTION
+---------------------*/
 
+.templates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: w;
+    gap: 20px;
+    border: 1px solid var(--dark-white);
+    padding: 30px 10px;
 
+    & article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+
+        & .templates-icons i {
+            font-size: 1.6rem;
+            color: var(--red);
+        }
+
+        & .templates-content {
+            & h4 {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            & p {
+                font-size: 0.8rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.templates article:not(:last-child) {
+    border-right: 1px solid var(--dark-white);
+}
 
 /* ------------------ 
     MEDIA QUERIES
