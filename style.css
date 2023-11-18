@@ -157,6 +157,12 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    flex: 0 0 12%;
+    max-width: 12%;
 }
 
 .forms,
@@ -164,11 +170,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    flex: 0 0 16%;
-    max-width: 16%;
 }
 
 .header-forms {
@@ -181,13 +182,17 @@ body {
 
 .categories {
     background: var(--btns-white);
-    width: 30%;
+    flex: 0 0 30%;
+    width: 200px;
+    max-width: 300px;
+    min-width: 200px;
     padding-left: 15px;
     border-radius: 3px;
     font-size: 14px;
     font-weight: 600;
     height: 50px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .categories p {
@@ -252,8 +257,8 @@ input::placeholder {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%;
+    flex: 0 0 12%;
+    max-width: 12%;
 }
 
 .cart-icon {
@@ -287,6 +292,130 @@ input::placeholder {
     border-right: 1px solid var(--dark-white);
     padding: 0 10px;
 }
+
+/* ------------------ 
+    HERO SECTION
+---------------------*/
+
+.hero {
+    height: calc(100vh - 175px - 100px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    background-image: url("https://korando-demo.myshopify.com/cdn/shop/files/1.jpg?v=1613746677");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: slider-animation 10s ease-in-out infinite alternate;
+}
+
+@keyframes slider-animation {
+    0%,
+    40% {
+        background-image: url("https://korando-demo.myshopify.com/cdn/shop/files/1.jpg?v=1613746677");
+    }
+
+    60%,
+    100% {
+        background-image: url("https://korando-demo.myshopify.com/cdn/shop/files/2.jpg?v=1613746737");
+    }
+}
+
+.hero-container {
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .hero-content {
+        flex: 0 0 65%;
+        max-width: 65%;
+        line-height: 1.2;
+        position: relative;
+    
+        & h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            
+            & span {
+                color: var(--red);
+                display: block;
+            }
+        }
+
+        & h4 {
+            font-size: 2rem;
+            font-weight: 400;
+            animation-delay: 0.3s;
+
+            & span {
+            color: var(--red);
+            }
+        }
+
+        & .hero-btn {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            animation-delay: 0.6s;
+
+            & a {
+                background: var(--grey);
+                color: #fff;
+                padding: 16px 30px;
+                border-radius: 3px;
+                font-size: 1rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                transition: all 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--red);
+                }
+            }
+        }
+    }
+}
+
+.hero-sliders__white,
+.hero-sliders__black {
+    position: absolute;
+    bottom: -130px;
+    cursor: pointer;
+}
+
+.hero-sliders__black {
+    height: 8px;
+    width: 30px;
+    background: #000;
+    left: 5px;
+    border-radius: 20px;
+}
+
+.hero-sliders__white {
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    left: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* ------------------ 
+    MEDIA QUERIES
+---------------------*/
 
 @media screen and (min-width: 1600px) {
     .header-top,
