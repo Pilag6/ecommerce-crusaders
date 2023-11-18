@@ -55,7 +55,7 @@ body {
 .header-top__left--nav,
 .header-top__right--nav {
     display: flex;
-    gap: 34px;
+    gap: 24px;
     font-size: 14px;
     color: var(--grey);
 }
