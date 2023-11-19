@@ -36,17 +36,22 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
     <body>
         <div class="container">
-
             <!-- HEADER -->
             <header>
                 <!-- HEADER TOP -->
                 <div class="header-top">
+
                     <div class="header-top__left">
                         <ul class="header-top__left--nav">
-                            <li><a href="#" class="active"><i class="fa-brands fa-fort-awesome"></i> Home
+                            <li>
+                                <a href="#" class="active">
+                                <i class="fa-brands fa-fort-awesome"></i> Home
                                 <ul class="dropdown home-dropdown">
                                     <li><a href="#">Home One</a></li>
                                     <li><a href="#">Home Two</a></li>
@@ -54,7 +59,8 @@
                                     <li><a href="#">Home Four</a></li>
                                     <li><a href="#">Home LTA</a></li>
                                 </ul>
-                            </a></li>
+                                </a>
+                            </li>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> Shop</a></li>
                             <li><a href="#"><i class="fa-solid fa-gifts"></i> Products</a></li>
                             <li><a href="#"><i class="fa-solid fa-square-pen"></i> Blog</a></li>
@@ -63,7 +69,6 @@
                         </ul>
                     </div>
 
-                    <!-- HEADER BOTTOM -->
                     <div class="header-top__right">
                         <ul class="header-top__right--nav">
                             <li>
@@ -96,12 +101,14 @@
                     </div>
                 </div>
 
+                 <!-- HEADER BOTTOM -->
                 <div class="header-bottom">
                     <!-- LOGO -->
-                    <div class="logo">
+                    <div class="logo" >
                         <img
                             src="./assets/logo-crusaders.png"
                             alt=""
+                            class="animate__animated animate__backInDown"
                         />
                     </div>
 
@@ -162,7 +169,7 @@
             <main>
 
                 <!-- TEMPLATES -->
-                <section class="templates">
+                <section class="templates" data-aos="fade-up">
                     <article>
                         <div class="templates-icons">
                             <i class="fa-solid fa-truck"></i>
@@ -208,7 +215,7 @@
                         <h2>SHOP BY CATEGORIES</h2>
                     </div>
 
-                    <div class="shop-by__boxes">
+                    <div class="shop-by__boxes" data-aos="fade-up">
                         <!-- #1 -->
                         <article>
                             <div class="shop-by__img">
@@ -217,10 +224,10 @@
                             <div class="shop-by__content">
                                 <h4>FASHION</h4>
                                 <ul>
-                                    <li><a href="#">Pouch</a></li>
                                     <li><a href="#">Ladies</a></li>
-                                    <li><a href="#">Knights</a></li>
                                     <li><a href="#">Youths</a></li>
+                                    <li><a href="#">Knights</a></li>
+                                    <li><a href="#">Pouch</a></li>
                                     <li><a href="#">See more</a></li>
                                 </ul>
                             </div>
@@ -280,32 +287,85 @@
 
                 </section>
 
-                <section class="banners">
+                <!-- BANNERS -->
+                <section class="banners" data-aos="fade-up">
                     <div class="banner__img">
                         <a href="#">
                             <img src="./assets/banner-4.jpg" alt="">
-                            <div class="banner__img--hover">+</div>
+                            <div class="banner__img--hover"><i class="fa-solid fa-location-arrow"></i></div>
                         </a>
-                        
-
                     </div>
                     <div class="banner__img">
                         <a href="#">
                             <img src="./assets/banner-5.jpg" alt="">
-                        
-                            <div class="banner__img--hover"></div>
+                            <div class="banner__img--hover"><i class="fa-solid fa-location-arrow"></i></div>
                         </a>
                     </div>
                     <div class="banner__img">
                         <a href="#">
                             <img src="./assets/banner-6.jpg" alt="">
-                            <div class="banner__img--hover"></div>
+                            <div class="banner__img--hover"><i class="fa-solid fa-location-arrow"></i></div>
                         </a>
                     </div>
                 </section>
+
+                <!-- HOT DEALS -->
+                <section class="hot-deals">
+
+                        <article class="hot-deals__left">
+                            <div class="hdt">
+                                <div class="hdt__title">
+                                    <div class="stick"></div>
+                                    <h2>HOT DEALS</h2>
+                                </div>
+
+                                <div class="arrows">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+    
+                            <div class="hot-deals__left--box">
+                                <div>Foto</div>
+                                <div>Texto</div>
+                            </div>
+                        </article>
+
+                        <article class="hot-deals__right">
+
+                            <div class="hdt">
+                                <div class="hdt__title">
+                                    <div class="stick"></div>
+                                    <h2>BESTSELLER</h2>
+                                </div>
+
+                                <div class="arrows">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+                            </div>
+    
+                            <div class="hot-deals__right--box">
+                                helo
+                            </div>
+                        </article>
+
+                </section>
+
+
             </main>
         </div>
 
         <script type="module" src="./main.js"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 500,
+                easing: 'ease-in-out', 
+            });
+        </script>
     </body>
 </html>
