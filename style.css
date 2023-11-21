@@ -68,6 +68,43 @@ body {
     color: var(--grey);
 }
 
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--red);
+    color: #fff;
+    width: 40px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1000;
+    text-align: center;
+
+    & i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.scroll-up::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+}
+
 /* ------------------ 
       HEADER TOP 
 ---------------------*/
@@ -703,8 +740,15 @@ main {
             justify-content: space-between;
             align-items: center;
             gap: 20px;
-            padding: 30px 5px;
-            border: 1px solid red;
+            padding: 10px 5px;
+
+            & .hdl--box__img {
+                flex: 0 0 50%;
+                background: var(--btns-white);
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+            }
         }
     }
     & .hot-deals__right {
