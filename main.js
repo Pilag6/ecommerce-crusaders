@@ -21,6 +21,7 @@ const cartCounterHandler = () => {
 // Add an event listener to the cart element and call the cartCounterHandler function when the cart is clicked
 cartIcon.addEventListener("click", cartCounterHandler);
 
+// ----------------------------
 // Scroll Up
 
 const scrollUpButton = document.querySelector(".scroll-up");
@@ -32,8 +33,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (
-        document.body.scrollTop > 50 ||
-        document.documentElement.scrollTop > 50
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
     ) {
         scrollUpButton.style.display = "block";
     } else {
