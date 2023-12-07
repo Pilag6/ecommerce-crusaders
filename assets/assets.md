@@ -21,6 +21,14 @@ https://korando-demo.myshopify.com/cdn/shop/products/p2_2cce0f68-dcec-444a-9bd4-
 
 https://korando-demo.myshopify.com/cdn/shop/products/p19_a6349b77-f50b-4292-90eb-277409226b37_large.jpg?v=1538815549
 
+<!-- NEW PRODUCTS -->
+
+https://korando-demo.myshopify.com/cdn/shop/products/p11_a452d702-4030-4f13-ae50-ba5216a6dae4.jpg?v=1538808462
+
+https://korando-demo.myshopify.com/cdn/shop/products/hot-product1.jpg?v=1538800152
+
+
+
 <!-- icons -->
 
 <i class="fa-regular fa-heart"></i>

@@ -907,6 +907,165 @@ main {
     }
 }
 
+.new-products {
+
+    & .new-product__title {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--dark-white);
+        padding-bottom: 20px;
+
+        & .new-product__title--words {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+
+            & h2 {
+                font-size: 1.2rem;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:nth-child(3),
+                &:nth-child(4) {
+                    color: var(--second-grey);
+                }
+                
+            }
+
+            & .stick {
+                height: 5px;
+                width: 28px;
+                background: var(--red);
+                border-radius: 20px;
+            }
+
+        }
+
+        & .arrows {
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            color: var(--second-grey);
+
+            & i {
+                font-size: 1.2rem;
+
+                &:hover {
+                    color: var(--red);
+                }
+            }
+        }
+
+    }
+
+    & .new-product__content {
+        padding: 10px 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+
+        & articles {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            gap: 12px;
+
+            &:hover .new-product__img .new-absolute {
+                bottom: 0;
+            }
+
+            &:hover .new-product__img .new-icons {
+                visibility: visible;
+                opacity: 1;
+            }
+        
+            & .new-product__img {
+                position: relative;
+                overflow: hidden;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+
+                & .new-absolute {
+                    position: absolute;
+                    width: 100%;
+                    height: 40px;
+                    background: var(--grey);
+                    color: var(--btns-white);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 999;
+                    bottom: -50px;
+                    transition: all 0.5s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: var(--red);
+                    }
+
+                    & p {
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+
+                & .new-icons {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 0.5s ease-in-out;
+
+                    & i {
+                        background: #fff;
+                        padding: 8px;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        
+                        &:hover {
+                            color: #fff;
+                            background: var(--red);
+                        }
+                    }
+                }
+            }
+
+            & .new-product__price {
+                & h4 {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: var(--red);
+                }
+
+                & p {
+                    font-size: 0.9rem;
+                    transition: all 0.5s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--red)
+                    }
+                };
+            }
+
+            
+        }
+    }
+
+}
+
 /* ------------------ 
     MEDIA QUERIES
 ---------------------*/

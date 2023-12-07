@@ -58,14 +58,14 @@ let countDownDate = new Date("Dec 29, 2023 17:34:00").getTime();
 let myfunc = () => {
     let now = new Date().getTime();
     let timeleft = countDownDate - now;
-//     // Calculating the days, hours, minutes and seconds left
+    //     // Calculating the days, hours, minutes and seconds left
 
-//     /* 
-//     second = 1000
-//     minutes = second * 60
-//     hour = minutes * 60
-//     day = hour * 24
-//      */
+    //     /*
+    //     second = 1000
+    //     minutes = second * 60
+    //     hour = minutes * 60
+    //     day = hour * 24
+    //      */
 
     let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
     if (days < 10) {
@@ -86,14 +86,14 @@ let myfunc = () => {
         seconds = "0" + seconds;
     }
 
-//     // Result is output to the specific element
+    //     // Result is output to the specific element
 
     document.querySelector("#days span").innerHTML = days;
     document.querySelector("#hours span").innerHTML = hours;
     document.querySelector("#mins span").innerHTML = minutes;
     document.querySelector("#secs span").innerHTML = seconds;
 
-//     // Display the message when countdown is over
+    //     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc);
         document.querySelector("#days span").innerHTML = "00";
