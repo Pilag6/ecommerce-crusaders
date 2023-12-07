@@ -115,6 +115,7 @@ const slider = document.querySelector(".slider");
 const arrowIcons = document.querySelectorAll(".brands-container i");
 
 arrowIcons.forEach((icon) => {
+    
     icon.addEventListener("click", () => {
         if (icon.classList.contains("fa-chevron-right")) {
             slider.scrollLeft += 200;
