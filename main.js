@@ -109,4 +109,18 @@ let myfunc = () => {
 
 setInterval(myfunc, 1000);
 
+// Slider
 
+const slider = document.querySelector(".slider");
+const arrowIcons = document.querySelectorAll(".brands-container i");
+
+arrowIcons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+        if (icon.classList.contains("fa-chevron-right")) {
+            slider.scrollLeft += 200;
+        } else {
+            slider.scrollLeft -= 200;
+        }
+    });
+}
+);
