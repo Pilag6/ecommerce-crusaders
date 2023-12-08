@@ -541,8 +541,12 @@ main {
 ---------------------*/
 
 .shop-by {
+    margin-bottom: 70px;
     & .shop-by__title {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--dark-white);
+        padding-bottom: 20px;
+        
         display: flex;
         align-items: center;
         gap: 10px;
