@@ -78,6 +78,7 @@ body {
     height: 45px;
     line-height: 45px;
     border-radius: 5px;
+    border: 1px solid var(--dark-white);
     display: none;
     font-size: 1rem;
     cursor: pointer;
@@ -1200,7 +1201,6 @@ main {
                 border-top-left-radius: 5px;
 
                 & articles {
-                    
                     &:hover .electro-content__img .electro-absolute {
                         bottom: 0;
                     }
@@ -1279,7 +1279,6 @@ main {
                         font-size: 0.9rem;
                     }
                 }
-
             }
 
             & .electro-btn {
@@ -1307,17 +1306,15 @@ main {
 
         &:hover .electro-right-img img {
             scale: 1.1;
-            filter:brightness(.9)
+            filter: brightness(0.9);
         }
 
         & .electro-right-img {
-
             & img {
                 transition: all 0.5s ease-in-out;
                 cursor: pointer;
             }
         }
-
     }
 }
 
@@ -1326,7 +1323,7 @@ main {
     justify-content: space-between;
     width: 100%;
     text-align: center;
-    
+
     & article {
         width: 33.333%;
         flex-grow: 1;
@@ -1341,7 +1338,7 @@ main {
 
             &:hover img {
                 scale: 1.1;
-                filter:brightness(.9)
+                filter: brightness(0.9);
             }
 
             & img {
@@ -1383,7 +1380,72 @@ main {
             transition: all 0.5s ease-in-out;
         }
     }
+}
 
+.newsletter {
+    background: var(--red);
+
+    & .newsletter-wrapper {
+        max-width: 1240px;
+        margin: 0 auto;
+        color: #fff;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .newsletter-content {
+            width: 50%;
+
+            & p {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+
+        & .newsletter-form {
+            display: flex;
+            gap: 20px;
+            width: 50%;
+
+            & form {
+                display: flex;
+                width: 100%;
+                
+
+                & input {
+                    outline: none;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    flex: 0 0 80%;
+                    height: 50px;
+                    border-bottom-left-radius: 4px;
+                    border-top-left-radius: 4px;
+                }
+
+                & button {
+                    outline: none;
+                    border: none;
+                    color: var(--dark-white);
+                    background: var(--grey);
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    transition: background 0.5s;
+                    flex: 0 0 20%;
+
+                    &:hover {
+                        background: #4f4f4f;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* ------------------ 
