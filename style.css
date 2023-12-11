@@ -268,7 +268,7 @@ body {
 }
 
 .form-search {
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--dark-white);
     border-radius: 3px;
     width: 75%;
 }
@@ -1445,6 +1445,121 @@ main {
 
                     &:hover {
                         background: #4f4f4f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    text-align: center;
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+
+        & p {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 10px;
+
+    & div {
+        flex: 0 0 25%;
+    }
+
+    & div.first {
+         & img {
+            width: 200px;
+         }
+
+         & .text {
+            font-size: 0.8rem;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 10px 40px 20px 5px;
+         }
+
+         & .contact {
+            font-weight: 600;
+         }
+
+         & .address {
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+         }
+
+         .social {
+            display: flex;
+            gap: 30px;
+            padding: 0 30px 20px 0;
+
+            & i {
+                font-size: 1.2rem;
+                color: var(--second-grey);
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--red);
+                }
+            }
+         }
+    }
+
+    & .second, & .third, & .fourth {
+        & h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            & li {
+                font-size: 0.8rem;
+                font-weight: 400;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+
+                & a {
+                    color: var(--second-grey);
+
+                    &:hover {
+                        color: var(--red);
+                    }
+
+                    & i {
+                        rotate: 90deg;
+                    }
+
+                    &:hover i {
+                        color: var(--red);
+                        rotate: 0deg;
                     }
                 }
             }
