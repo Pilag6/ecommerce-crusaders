@@ -489,10 +489,6 @@ main {
     /* gap: 50px; */
 }
 
-/* ------------------ 
-    TEMPLATES SECTION
----------------------*/
-
 .templates {
     display: flex;
     justify-content: space-between;
@@ -535,10 +531,6 @@ main {
 .shop-by__boxes article:not(:last-child) {
     border-right: 1px solid var(--dark-white);
 }
-
-/* ------------------ 
-    PRODUCTS SECTION
----------------------*/
 
 .shop-by {
     margin-bottom: 70px;
@@ -620,10 +612,6 @@ main {
     }
 }
 
-/* ------------------ 
-    BANNER 1 SECTION
----------------------*/
-
 .banners {
     display: flex;
     justify-content: space-between;
@@ -683,10 +671,6 @@ main {
         }
     }
 }
-
-/* ------------------ 
-    HOT DEAL SECTION
----------------------*/
 
 .hot-deals {
     display: flex;
@@ -1571,7 +1555,7 @@ footer {
     MEDIA QUERIES
 ---------------------*/
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1536px) {
     .hero {
         height: calc(100vh - 175px - 100px);
     }
@@ -1587,3 +1571,19 @@ footer {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 990px) {
+}
+
+
+
+
